@@ -87,4 +87,6 @@ p{
 }
 footer p{
     text-align: center;
+    font-size: 15px;
+    opacity: 80%;
 }
