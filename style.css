@@ -1,5 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
+    background-image: linear-gradient( 360deg, #3a3d40 0%,
+     rgb(93, 89, 89) 100%);
+}
+
+
+#navbarNav ul li a:hover{
+    background-color: rgb(24, 24, 21);
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+   
+}
+p{
+    color: wheat;
 }
 h1{
     font-family: 'Lobster', cursive;
@@ -8,12 +33,17 @@ h1{
 h2{
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    color: red;
+    color: rgb(219, 208, 208);
+}
+h3{
+    color: violet;
 }
 .Exp{
-    padding-left: 2%;
+    padding-left: 10%;
+    padding-bottom: 3%;
     font-family:'Poppins', sans-serif ;
     font-size: 50px;
+    color: wheat;
 }
 .orange{
     color: orange;
@@ -39,7 +69,7 @@ p{
     width: 80%;
 }
 #new{
-    padding-left: 10%;
+    padding-left: 5%;
     width: 80%;
     border-radius: 50vh;
 }
@@ -51,14 +81,12 @@ p{
     color: white;
     font-weight: 800;
 }
-.top-banner{
-    background-image: url(images/top-banner.png);
-    background-repeat: no-repeat;
-}
+
 .dream-big{
     background-image: url(images/dream-bg.png);
+    background-size: 75px;
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: 48%;
 }
 .experience-area{
     background-image: url(images/exp-bg.png);
@@ -68,12 +96,13 @@ p{
 }
 .experience-item{
     width: 40%;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
     padding-left: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 40px yellowgreen;
     border-left: 10px solid;
+    line-height: 1.8em;
 }
 #web-dev-exp{
     border-left: 7px solid;
@@ -86,7 +115,38 @@ p{
     border-image-slice: 1;
 }
 footer p{
+    color: wheat;
     text-align: center;
     font-size: 15px;
     opacity: 80%;
 }
+#show-all a{
+    background-color: #40474e ;
+}
+#show-all a:hover{
+    background-color: rgb(226, 117, 67);
+}
+.contact-section-header h2{
+    font-size: 70px;
+}
+.contact-section-header p{
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+#contact .contact-links{
+    padding-bottom: 2%;
+}
+#contact .contact-links a{
+    font-size: 30px;
+    padding:20px ;
+}
+#contact .contact-links a:hover{
+    transform: translateX(10px);
+    transform: translateY(10px);
+    transition: transform 0.3s ease-out;
+}
+@media only screen and (max-width: 688px) {
+    body {
+      background-color: rgb(28, 236, 38);
+    }
+  }
